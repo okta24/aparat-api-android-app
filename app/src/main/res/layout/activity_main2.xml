@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity2" >
+    <Button
+        android:id="@+id/retry"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اینترنت متصل نمی باشد.\n تلاش مجدد"/>
+    <WebView
+        android:background="#00ffffff"
+        android:id="@+id/small_web"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="230dp"></WebView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginRight="5dp"
+        android:id="@+id/full_screen"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_open_with"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentRight="true"
+         />
+    <View
+        android:layout_marginTop="231dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#585858"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/small_web"
+        android:divider="@color/list_divider"/>
+
+</RelativeLayout>
